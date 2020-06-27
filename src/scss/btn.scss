@@ -1,0 +1,47 @@
+.btn {
+
+  &:link,
+  &:visited {
+    border-radius: 200px;
+    display: inline-block;
+    font-weight: 300;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    transition-duration: 0.25s,
+  }
+
+  &:hover,
+  &:active {
+    background: $primary-hover-backcolor;
+  }
+
+  &__size-full {
+
+    &:link,
+    &:visited {
+      background: $primary;
+      border: 1px solid $primary;
+      color: $contrast-color;
+
+      &:hover,
+      &:active {
+        background: $primary-hover-backcolor;
+      }
+    }
+  }
+
+  &__type-ghost {
+
+    &:link,
+    &:visited {
+      border: 1px solid $primary;
+      color: $primary;
+
+      &:hover,
+      &:active {
+        background: $primary-hover-backcolor;
+        color: $contrast-color;
+      }
+    }
+  }
+}
