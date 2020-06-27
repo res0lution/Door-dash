@@ -11,11 +11,12 @@
   }
 
   &:hover,
+  &:focus,
   &:active {
     background: $primary-hover-backcolor;
   }
 
-  &__size-full {
+  &_size-full {
 
     &:link,
     &:visited {
@@ -24,13 +25,14 @@
       color: $contrast-color;
 
       &:hover,
+      &:focus,
       &:active {
         background: $primary-hover-backcolor;
       }
     }
   }
 
-  &__type-ghost {
+  &_type-ghost {
 
     &:link,
     &:visited {
@@ -38,6 +40,7 @@
       color: $primary;
 
       &:hover,
+      &:focus,
       &:active {
         background: $primary-hover-backcolor;
         color: $contrast-color;

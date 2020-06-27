@@ -19,4 +19,39 @@
     text-transform: uppercase;
     word-spacing: 4px;
   }
+
+  &__logo {
+    float: left;
+    height: 100px;
+    margin-top: 1em;
+    width: auto;
+  }
+
+  &__menu {
+    float: right;
+    list-style: none;
+    margin-top: 3em;
+
+    li {
+      display: inline-block;
+      margin-left: 2em;
+
+      a:link,
+      a:visited {
+        border-bottom: 2px solid transparent;
+        color: $contrast-color;
+        font-size: 0.9rem;
+        padding: 0.4em 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition-duration: 0.25s;
+
+        &:hover,
+        &:active,
+        &:focus {
+          border-bottom: 2px solid $primary;
+        }
+      }
+    }
+  }
 }
