@@ -18,5 +18,12 @@ html {
   margin: 0 auto;
 }
 
+@mixin title {
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 @import "btn";
 @import "header";
+@import "features";
