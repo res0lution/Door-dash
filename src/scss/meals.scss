@@ -1,0 +1,22 @@
+.meals {
+  &__showcase {
+    list-style: none;
+    width: 100%;
+
+    li {
+      display: block;
+      float: left;
+      width: 25%;
+    }
+  }
+
+  &__meal-photo {
+    margin: 0;
+    width: 100%;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
