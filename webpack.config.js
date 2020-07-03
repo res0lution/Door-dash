@@ -39,6 +39,17 @@ module.exports = (env, options) => {
           ],
         },
         {
+          test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
+          exclude: [/components/, /img/, /static/],
+          use: {
+            loader: "file-loader",
+            options: {
+              name: "./fonts/[name].[ext]",
+              publicPath: "../",
+            },
+          },
+        },
+        {
           test: /\.(png|jpg|gif|svg)$/,
           loader: "file-loader",
           exclude: [/node_modules/],
